@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default class CustomTab extends React.Component {
     render(){
         return(
-            <div className="Details-container">
+            <div className="Details-container" id={"customTab"}>
                 <div className="Details-box1">
                     <label className="Details-text">Custom</label>
                 </div>

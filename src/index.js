@@ -4,15 +4,13 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Description from './Pages/Description';
-import Footer from './CommonComponent/Footer';
 
 
 const routing = (
     <Router>
         <Route path="/" component={App} />
-        {/* <Route path="/Description" component={Description} /> */}
-        <Route path="/footer" component={Footer} />
+        {/* <Route path="/Description" component={Description} />
+        <Route path="/footer" component={Footer} /> */}
     </Router>
   )
   

@@ -1,29 +1,38 @@
 .App {
   background-color:lightgray;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .App-header {
-  background-color:whitesmoke;
-  width:95%;
+  background-color: whitesmoke;
+  width: 95%;
   margin-left: 5%;
   height: 10vh;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top:0;
+  z-index: 99;
 }
 
 .App-footer {
-  background-color:rgb(252, 252, 44);
+  background-color:rgb(253, 253, 71);
   height: 35vh;
   width:95%;
   margin-left: 5%;
 }
 
 .Left-container {
-  width:'30%'
+  /* width:'30%' */
 }
 .Right-container {
-  width:'65%';
+  /* width:'65%';
   display: flex;
   flex-direction: row-reverse;
-  padding-top: 20px;
+  padding-top: 20px; */
 }
 
 .Ul {
@@ -34,21 +43,24 @@
 .Li{
   display: inline-block;
   margin-right: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .Details-container {
   margin-left:5%;
-  margin-top: 5%;
+  margin-top: 10%;
   display: flex;
   height: 500px;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 5%;
 }
 
 .Details-box1 {
   display: flex;
   justify-content: center;
-  width: 71px;
+  width: 80px;
+  align-items: center;
 }
 
 .Details-text {
@@ -62,6 +74,8 @@
 
 .Details-box2{
   width: 320px;
+  align-items: center;
+  display: inline-flex;
 }
 
 .Details-box3 {
@@ -92,6 +106,15 @@
 
 .Side-val {
   margin: 18px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.Nav-val {
+  /* margin: 18px; */
   text-decoration: none;
   color: black;
   font-family: 'Times New Roman', Times, serif;
@@ -146,14 +169,19 @@
 
 .Box3-left {
   width: 60%;
+  z-index: 99;
+  align-items: center;
+  display: inline-flex;
 }
 
+
 .Box3-right {
-  width: 40%;
+  width: 100%;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  margin-left: 60%;
 }
 
 .Box3-des {
@@ -199,20 +227,102 @@
 }
 
 .Product-container {
-  /* flex-direction: column; */
+  flex-direction: column;
   margin-left: 5%;
   display: flex;
   margin-bottom: 5%;
+  overflow: 'auto';
 }
 
 .Product-list {
   flex-direction: column;
   display: inline-flex;
   margin-top: 2%;
-  height: 200px;
-  width:200px;
-  border: 1px solid;
-  /* background: red; */
+  height: 210px;
+  width:190px;
+  align-items: center;
+  margin-right: 2px;
+  overflow: 'auto';
+  background-color: white
+}
+
+.Pdf-container {
+  height: 70px;
+  width: 200px;
+  background: orange;
+  position: absolute;
+  right: 0;
+}
+
+.Heading-text {
+  position: absolute;
+  left: 35.4%;
+  width: 31%;
+  background-color: lightgray;
+  height: 15%;
+  font-size: 28px;
+}
+
+.Cart-val {
+  width: 100%;
+  margin-top: 10px;
+  
+}
+.Display-cart {
+  margin: 1%;
+  display: inline-flex;
+  width: 25px;
+  justify-content: center;
+}
+
+.Add-cart {
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+.Addcart-container {
+  height: 21px;
+  width: 89px;
+  display: inline-block;
+  background-color: yellow;
+}
+.Color-container {
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.Color-box1 {
+  border-radius: 12.5px;
+  width: 25px;
+  height: 25px;
+  background-color: rebeccapurple;
+}
+
+.Color-box2 {
+  border-radius: 12.5px;
+  width: 25px;
+  height: 25px;
+  background-color: burlywood;
+  margin-left: 10px;
+} 
+
+.Color-box3 {
+  border-radius: 12.5px;
+  width: 25px;
+  height: 25px;
+  background-color: darkgrey;
+  margin-left: 10px;
+}
+
+.Delivery {
+  text-decoration: none;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 11px;
+  margin-left: 5px;
 }
 
 @keyframes App-logo-spin {
